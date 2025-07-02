@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'numeros';
+    src: url(../fonts/relogio.ttf);
+}
+
+@font-face {
+    font-family: 'relogio';
+    src: url(../fonts/numeros.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: linear-gradient(120deg, #00000076, #00000071), url('https://static.wixstatic.com/media/8d4bfe_92a2886a9260408e8f22151008c8c788~mv2.gif') center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: aqua;
+    text-shadow: -1px -1px 10px white;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'relogio';
+    background-color: rgba(0, 0, 0, .8);
+    box-shadow: 0 0 14px;
+    padding: 3%;
+}
+
+.relogio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    width: 90%;
+    margin: 2%;
+}
+
+.relogio div {
+    padding: 5%;
+    background-color: rgba(0, 0, 0, .8);
+    box-shadow: 0 0 14px;
+    width: 40%;
+    margin: 5px;
+}
+
+
+.relogio span {
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'numeros';
+}
+
+.relogio span.tempo {
+    font-family: 'relogio';
+
+}
+
+
+@media (max-width: 500px) {
+    .relogio {
+        flex-direction: column;
+    }
+    h1{
+        font-size: 3rem;
+    }
+
+}

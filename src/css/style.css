@@ -1,0 +1,506 @@
+@font-face {
+    font-family: 'poppins';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(71, 71, 71, 0.397);
+    color: #1c1c1c;
+    display: grid;
+    place-items: center;
+}
+
+h1,
+h2,
+h3 {
+    color: orangered;
+    text-align: center;
+    padding-top: 4%;
+    text-shadow: -2px 2px 2px black;
+}
+
+p {
+    padding: 2%;
+    text-indent: 1.8rem;
+}
+
+/* HEADER */
+
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+header nav {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+#logo {
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+header nav #logo img {
+    width: 100%;
+    height: 100%;
+}
+
+header nav #logo img:hover {
+    scale: 130%;
+    transition: 1s;
+}
+
+nav ul {
+
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-shadow: 1px 1px #000;
+}
+
+nav ul li a:hover {
+    color: rgb(208, 80, 92);
+    text-shadow: 1px 1px 1px #000;
+    transition: all 1s;
+}
+
+.hamburguer,
+.close {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburguer:hover,
+.close:hover {
+    text-shadow: -2px 2px orange, 2px -2px 3px black;
+    transition: all 1.5s;
+}
+
+/* BANNER */
+
+.banner {
+    background: linear-gradient(#0000008a, #000000ab), url('https://es.senac.br/admin/data/dynamic/cursos/364/c075e458ea683f55c514910492f08f8b_lg_original_.jpg') center no-repeat;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.25rem;
+    align-items: center;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    text-shadow: -2px 2px 2px black;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+.botao {
+    background: #000000ad;
+    color: #fff;
+    padding: 0.4rem 1.6rem;
+    border-radius: 0 0 0 0;
+    font-size: .8rem;
+    border-radius: 25px;
+    box-shadow: -1px 1px 5px;
+}
+
+.botao:hover {
+    background-color: rgb(208, 80, 92);
+    color: white;
+    box-shadow: -1px 1px 2px var(--yellow-s);
+    transition: all 1.5s;
+}
+
+/* SOBRE */
+
+#sobre {
+    background: linear-gradient(#262626ca, #000000ba), url('https://mh-2-cdn.panthermedia.net/media/previews/0021000000/21752000/~pessoa-usando-computador-port%C3%A1til_21752465_high.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sobre p {
+    color: #fff;
+    background-color: #0000008f;
+    width: 80%;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SERVIÇOS */
+
+#servicos {
+    background: linear-gradient(#00000076, #00000069), url("../img/programmer.jpg") no-repeat center;
+    background-color: var(--dark);
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+}
+
+
+#conteudos_servicos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem 0;
+    gap: 1rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+#conteudos_servicos div {
+    background-color: rgba(255, 166, 0, 0.136);
+    max-width: 550px;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5%;
+    transition: all 1.5s;
+}
+
+#conteudos_servicos div:hover {
+    scale: 110%;
+    transition: all 1.5seg;
+}
+
+#conteudos_servicos img {
+    width: 60px;
+    height: 70px;
+}
+
+#conteudos_servicos img:hover {
+    transition: all 1.5s;
+    scale: 150%;
+}
+
+
+#conteudos_servicos p {
+    font-size: .9rem;
+}
+
+/* CONTATOS */
+
+#contatos {
+    background: linear-gradient(45deg, #0000008a, #00000077), url("../img/contactos.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.fale__connosco {
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+/* SOCIAL CONTAINER */
+.social-container {
+    background-color: #000000b6;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    width: 90%;
+}
+
+.image__animada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image__animada img {
+    width: 20%;
+}
+
+.social-container i {
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all 1s;
+    text-align: center;
+    margin: 10px;
+}
+
+.fa-facebook:hover {
+    background-color: #1f7bf2;
+    transform: scale(120%);
+}
+
+.fa-linkedin:hover {
+    background-color: #086b9c;
+    transform: scale(120%);
+}
+
+.fa-whatsapp:hover {
+    background: linear-gradient(to bottom, #5ff475, #38c33a);
+    transform: scale(120%);
+}
+
+.fa-instagram:hover {
+    background: linear-gradient(to bottom, #515bd4, #8134af, #dd2a7b, #feda77, #f58529);
+    transform: scale(120%);
+}
+
+.fa-github:hover {
+    background: linear-gradient(to bottom, #000, #000);
+    transform: scale(120%);
+}
+
+/* SECTION PROJETOS */
+
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.titulos__h3 {
+    color: white;
+}
+
+.hover-galeria button a {
+    color: white;
+    transition: all 1s;
+}
+
+
+.hover-galeria p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover-galeria p img {
+    width: 25%;
+}
+
+.imagem-port {
+    width: 33%;
+    margin-bottom: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagem-port>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    background: linear-gradient(45deg, hsla(0, 0%, 0%, 0.63), hsla(0, 0%, 0%, 0.466));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    transition: transform .5s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img {
+    width: 50px;
+}
+
+.imagem-port:hover .hover-galeria {
+    transform: scale(1);
+    color: var(--white);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    nav {
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    #conteudos_servicos div {
+        width: 95%;
+    }
+}
+
+/* TELAS MENORES MENU */
+
+@media (max-width: 768px) {
+
+    .hamburguer {
+        display: block;
+    }
+
+    .show {
+        left: 0;
+    }
+
+    ul {
+        background-color: var(--dark);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 40vh !important;
+        flex-direction: column;
+        justify-content: space-around !important;
+    }
+
+    nav ul {
+        background: linear-gradient(120deg, #aaaaaae3, #ffa600e3, #454545e3);
+    }
+
+    #projetos {
+        height: 100vh;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .galeria-port {
+        height: 80%;
+    }
+
+    .imagem-port {
+        height: 28vh;
+        width: 48%;
+    }
+}
+
+/* ANIMAÇÃO E IMAGEM */
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+
+}
+
+#fotos div img {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-name: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+/* FOTOS */
+
+#fotos {
+    background: linear-gradient(#00000076, #00000069), url("https://www.blogdelfotografo.com/wp-content/uploads/2020/10/aprender-fotografia.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#fotos div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#fotos img {
+    width: 100%;
+    height: 100%;
+    margin: 1rem;
+}
+
+.caixa__foto {
+    width: 60%;
+    height: 60%;
+    background-color: #00000085;
+    box-shadow: 0 0 20px orangered;
+}
+
+.caixa__foto>img {
+    margin: 2px;
+}
+
+/* BOTAO UP */
+
+#up a i {
+    color: black;
+    background-color: white;
+    position: fixed;
+    right:  3%;
+    bottom: 3%;
+    padding: 2%;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#up a i:hover{
+    color: orangered;
+    background-color: #000000;
+}

@@ -1,0 +1,164 @@
+/* VARIAVEL DE CORES */
+:root {
+    --dark: #1C1618;
+    --red: #D90452;
+    --pink: #51268C;
+    --roxo: #6241D9;
+    --Yellow: #FCEC3E;
+    --brawn: #5F3926;
+}
+
+/* RESET GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    border: none;
+}
+
+body {
+    background: url('https://images.unsplash.com/photo-1625225230517-7426c1be750c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9ybXxlbnwwfHwwfHx8MA%3D%3D') center no-repeat;
+    background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/* IMG do formulario */
+.icon-formulario img {
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+input {
+    color: black;
+}
+
+input:focus {
+    color: var(--roxo);
+    outline: none;
+}
+
+a {
+    font-size: 0.8rem;
+}
+
+a:hover {
+    color: var(--red);
+}
+
+/* CONTAINER LOGIN */
+
+#login-container {
+    background-color: #00000087;
+    width: 25rem;
+    padding: 1.25rem 1.8rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* AREA DE FORMULARIO */
+
+label,
+input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid #6241D9;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-bottom: 2px solid blueviolet;
+    transition: all 1s;
+}
+
+#forgot-pass {
+    display: block;
+    text-align: right;
+}
+
+input[type="submit"] {
+    background-color: #6241D9;
+    text-align: center;
+    color: #fff;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40%;
+    margin: 30px auto 20px;
+    transition: width 1s;
+}
+
+input[type="submit"]:hover {
+    background-color: #6241D9a7;
+    width: 100%;
+}
+
+/* SOCIAL CONTAINER */
+
+#social-container,
+#social-container p {
+    margin-bottom: 1.25rem;
+}
+
+#social-container i {
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all 1s;
+}
+
+.fa-facebook:hover {
+    background-color: #1f7bf2;
+    transform: scale(120%);
+}
+
+.fa-linkedin:hover {
+    background-color: #086b9c;
+    transform: scale(120%);
+}
+
+.fa-whatsapp:hover {
+    background: linear-gradient(to bottom, #5ff475, #38c33a);
+    transform: scale(120%);
+}
+
+.fa-instagram:hover {
+    background: linear-gradient(to bottom, #515bd4, #8134af, #dd2a7b, #feda77, #f58529);
+    transform: scale(120%);
+}
+
+.fa-twitter:hover {
+    background: linear-gradient(to bottom, #08a0e9, #e8f5fd, #0084b4);
+    transform: scale(120%);
+}
+
+.fa-telegram:hover {
+
+    background: linear-gradient(to bottom,
+            #dfd8cb, #37afe2, #1b92d1, #c8d9ea, #ecf5fb);
+    transform: scale(120%);
+}
+
+#register-container a{
+    font-size: 1rem;
+}
